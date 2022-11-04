@@ -1,106 +1,145 @@
+@import url('reset.css');
+
 body{
-    color: rgb(29, 29, 71);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: medium;
-    background-color: rgb(173, 219, 240);
-}
-
-#area-cabecalho{
-    background-color: white;
-    padding: 5px;
-}
-
-.pagina-principal{
-    text-align: center;
-    padding-left: 400px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: large;
-}
-
-#logo{
-
-    width: 200px;
-    padding-left: 50px;
-}
-
-#corpo-site{
-    color: rgb(38, 38, 110);
-}
-
-/** Menu lateral**/
-
-#menu-lateral{
-    background-color: white;
-    width: 300px;
-    height: 600px;
-    float: left;
-    margin: 15px;
-}
-
-li{
-    padding: 10px;
-    list-style: none;
-    text-align: center;
-    float: center;
-    margin-right: 25px;
-}
-
-a{
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-
-}
-
-a:link, a:visited{
-    color: rgb(29, 29, 71);
-}
-
-#menu-lateral a:link, a:visited{
-    color:rgb(29, 29, 71);
-}
-
-#menu-lateral a:hover{
-    background-color: rgb(29, 29, 71);
+    background-color: black;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
     color: white;
 }
 
-/**Corpo do Texto**/
 
-h1{
+
+/* Banner */
+
+.banner-conteudo{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(49, 168, 221, 0) 100%), url('../trilha-css-desafio-01-main/assets/images/banner.png');
+}
+
+.banner-conteudo h1{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: transparent;
+    background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.banner-conteudo p{
+    font-size: 1.25rem;
+    margin: 16px 0 24px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.banner-conteudo button{
+    color:  #1472B7;
+    background-color: black;
+    border: 3px solid  #1472B7;
+    padding: 15px;
+    font-family: 'Raleway';
+    font-size: 1rem;
+    letter-spacing: 8px;
+
+}
+
+h2{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.19em;
+    color: #33A8DB;
+    background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     text-align: center;
 }
 
-p{
+#conteudo-curso{
+    margin: 50px;
+    padding: 50px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.lista-modulos{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 150px;
+}
+
+.modulo{
+    border: 5px solid #33A8DB;
+    margin: 25px;
     padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(43, 42, 42, 0.541);
 }
 
-table{
+.modulo span {
+    color: #33A8DB;
+  }
+
+#transforme{
+    position: absolute;
+    margin: 100px;
+    background-size: cover;
+    background-attachment: fixed;
+    border-top: 1px solid #33A8DB80;
+    border-bottom: 1px solid #33A8DB80;
+    padding: 200px;
+    background: url('../trilha-css-desafio-01-main/assets/images/woman-code.png');
+}
+
+#transforme p{
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    max-width: 250px;
+    text-shadow: 3px 2px #33A8DB;
+}
+
+#desafios {
     text-align: center;
-    border: 50px;
-    border-color: rgb(38, 38, 110);
-    padding: 15px;
-    margin-left: 550px;
 }
-
-th{
-    background-color: white;
-    padding: 15px;
+  
+#desafios img {
+    margin: 32px 0;
 }
-
-td{
-    padding: 15px;
-
-}
-
-.contato{
+  
+footer {
+    padding: 60px 0;
     text-align: center;
-    margin-top: 150px;
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    border-top: 1px solid #33A8DB80;
 }
-/** Rodapé**/
-
-#rodape{
-    text-align: center;
-    margin-top: 295px;
-    background-color: white;
+  
+footer .dio-logo {
+    width: 300px;
+}
+  
+footer a {
+    color: #33A8DB;
+    font-weight: bold;
+    text-decoration: none;
 }
